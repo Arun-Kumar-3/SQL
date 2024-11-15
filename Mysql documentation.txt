@@ -1,0 +1,76 @@
+.....................  MYSQL ...........................
+
+what is sql ?:
+    * it is invented in 1970-IBM
+    * sql stand for strunctured query language 
+    * it follow relational management rules as normalization
+    * current version is 8.0
+    
+
+why use sql ? :
+    * sql is easy,simple to write if even non it proffesional can understand easily
+    * it is very poweful
+    * it is non procedurel language 
+    * only write what do you want not how it get
+    * it is declarative 
+
+
+sql - structured query language
+from- ibm 1970
+current update - mysql 8.0
+
+sql topics:
+1.DDL - Data Defenition  Language
+    - 1.create
+        * create shema or table
+        1. create shema:
+            CREATE SCHEMA schema_name;
+        2.create table:
+            CREATE TABLE table_name;
+
+
+    - 2.alter
+        * modify table it make changes
+        1. add column:
+            ALTER TABLE table_name ADD COLUMN column_name datatype;
+        2. modify:
+            ALTER TABLE table_name modify COLUMN column_name datatype;
+        3.drop:
+            ALTER TABLE table_name DROP COLUMN column_name;
+
+    - 3.drop 
+        * delete 
+        1. drop table:
+            DROP TABLE table_name;
+        2. drop database:
+            DROP SCHEMA shema_name;
+        
+    - 4.truncate
+        * truncate use to delete rows only
+        * remove all rows in a table withot deleteing the table itself. 
+
+
+    - 5.rename
+        * remane use to change the table name 
+        * it has only make change table not make change in schema name
+        -RENAME TABLE table_name TO changed_new_name;
+    
+    - 6.comment
+        * comment use for documentation 
+
+        1. table comment:
+            - ALTER TABLE table_name COMMENT="THIS IS TABLE COMMENT";
+        2. column comment:
+            - ALTER COLUMN table_name.column_name COMMENT ="THIS IS COLOUMN COMMENT";
+
+    - 7.use
+        * use comment to use the particular schema
+        - USE shema_name; 
+
+
+        
+2.DML - Data Manipulation Language
+
+3.DCL - Data Control Language
+4.TCL - Transaction Control Language
+
